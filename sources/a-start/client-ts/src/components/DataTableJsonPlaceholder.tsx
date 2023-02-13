@@ -1,4 +1,8 @@
 import { useEffect, useState } from "react";
+
+// Harus menggunakan response yang didefinisikan (karena ini TS)
+import { JsonPlaceholderResponse } from "../ts-related/jsonplaceholder";
+
 import CustomLoader from "../components/CustomLoader";
 
 const DataTableJsonPlaceholder = () => {
@@ -6,8 +10,11 @@ const DataTableJsonPlaceholder = () => {
   // Untuk bisa membuat loader, artinya membutuhkan 2 buah state:
   // - State untuk menyatakan sedang loading (isLoading)
   // - State untuk data todos yang akan diambil (data)
-  const [isLoading, setIsLoading] = useState(true);
-  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+
+  // Datanya akan diambil dari JsonPlaceholderResponse
+  // Karena bisa banyak, definisikan sebagai Array of JsonPlaceholderResponse
+  const [data, setData] = useState<JsonPlaceholderResponse[]>([]);
 
   // Untuk bisa mengambil data yang ada, kita akan membutuhkan useEffect
   useEffect(

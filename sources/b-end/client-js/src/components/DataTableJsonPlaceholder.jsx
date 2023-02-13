@@ -74,7 +74,7 @@ const DataTableJsonPlaceholder = () => {
               <td className="p-2">{todo.userId}</td>
               <td>{todo.id}</td>
               <td>{todo.title}</td>
-              <td>{todo.isCompleted ? "True" : "False"}</td>
+              <td>{todo.completed ? "True" : "False"}</td>
             </tr>
           ))}
         </tbody>
