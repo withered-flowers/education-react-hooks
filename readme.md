@@ -14,9 +14,13 @@ Nah, sehubungan dengan yang ada di atas, Hooks adalah fungsi yang disediakan ole
 
 ### Aturan Penggunaan Hooks
 
-- Hooks hanya bisa didefinisikan di atas atas Komponen atau di dalam Hooks
-- Hooks tidak bisa dipanggil di dalam kondisional, iterasi, ataupun nested function
 - Hooks hanya bisa dipanggil dari Fungsi React
+- Hooks hanya boleh didefinisikan di atas Komponen atau di dalam Hooks
+- Hooks tidak boleh dipanggil di dalam kondisional, iterasi, ataupun nested function
+
+Dokumentasi:
+
+- https://react.dev/warnings/invalid-hook-call-warning
 
 ### Demo Custom Hooks
 
