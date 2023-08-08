@@ -36,4 +36,8 @@ Di sini kita akan mencoba untuk menggunakan `useState` dan `useEffect` serta mem
 DISCLAIMER:
 
 - Source Code yang didemokan di sini menggunakan Vite sebagai build toolsnya.
-- Apabila menggunakan Create-React-App (CRA) dalam meng-inisialisasi project, harap disesuaikan yah !
+- Sebisa mungkin tidak menggunakan `Create-React-App` (CRA) dalam menginisialisasi project lagi yah, karena sudah deprecrated !
+
+### Additional Resource:
+
+- https://usehooks-ts.com/react-hook/use-debounce
